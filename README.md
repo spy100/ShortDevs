@@ -10,7 +10,7 @@ Shordevs allows the user to collect, manipulate, share data on the web and it si
 
 Shortdevs allows a non-programmer to create anything that he can imagine with the help of shortcodes and tables.
 
-In Shortdevs a table is called a "page" or as "superpage".
+In Shortdevs a table is called a "page" or "superpage".
 
 Pages are private, only the json data for the pages can be shared on the web.
 
