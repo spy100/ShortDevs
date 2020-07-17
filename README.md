@@ -24,5 +24,5 @@ Shortdevs is the universe of shortcodes and tables.
 
 If you need ShortDevs shortcodes or templates/designs for the superpages development , or if you want to invest ,sponsor or contribute to the project
 
-You can contact me on telegram @Alin100 or  email wdesigner2010[dot]gmail.com
+#### You can contact me on telegram @Alin100 or  email wdesigner2010[dot]gmail.com
 
