@@ -1,0 +1,1192 @@
+
+html,body{
+  background:white;
+  margin:0;
+  padding:0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensedregular.eot"); 
+  src: url("../fonts/roboto-condensedregular.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/roboto-condensedregular.otf") format("opentype"), 
+    url("../fonts/roboto-condensedregular.svg") format("svg"), 
+    url("../fonts/roboto-condensedregular.ttf") format("truetype"), 
+    url("../fonts/roboto-condensedregular.woff") format("woff"), 
+    url("../fonts/roboto-condensedregular.woff2") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+a{
+  outline:none;
+}
+
+h4{
+  padding:0;
+  margin:0;
+}
+
+input:focus, input.form-control:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* For IE  */
+select::-ms-expand {
+  display: none;
+} 
+
+label{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:13px;
+  color:#333;
+}
+
+.errors{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:13px;
+  color:red;
+  margin-top:-15px;
+  margin-bottom:15px;
+}
+
+
+
+/* ShortDevs logo top start */
+.stickytop{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index:2;
+}
+
+
+.logonav{
+ color:#FFF;
+ overflow:hidden;
+ font-size:30px;
+ background:black;
+ padding:10px 10px 10px 10px;
+}
+.logo{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:30px;
+  float:left;
+  width:100%;
+  text-align:center;
+  color:white;
+}
+
+.paneltitle{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:18px;
+  color:black;
+  border-bottom:1px solid #CCC;
+  padding-top:10px;
+  padding-bottom:10px;
+  overflow:hidden;
+  display:block;
+}
+
+.paneltitle2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:18px;
+  color:black;
+  border-bottom:1px solid #CCC;
+  padding-top:10px;
+  padding-bottom:10px;
+  overflow:hidden;
+  display:block;
+  margin-bottom:15px;
+}
+
+pre.error{
+  color:red;
+}
+
+.gold{
+  color: gold;
+}
+
+.smallv{
+  font-size:13px;
+}
+
+/* ShortDevs logo top end */
+
+
+
+/* ShortDevs mobile menu start */
+.mobilenav{
+  display:none;
+}
+
+.mobilenavtop{
+  display:none;
+}
+
+.mobilenavtop a {
+  float: left;
+  display: block;
+}
+
+.mobilenavtop a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  .mobilenavtop a.closeicon {
+    display:none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+  
+  
+  .mobilenavtop{
+    position: relative;
+    display:block;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform:uppercase;
+  }
+  
+  .mobilenavtop a.active {
+    background-color: gold;
+    color: black;
+    padding: 10px 10px;
+  }
+  
+  .mobilenavtop a {
+    display:block;
+    float: none;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    outline:none;
+  }
+  
+  .mobilenavtop a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .mobilenav.responsive {
+    display:block;
+    position: absolute;
+    width:70%;    
+    overflow-y:scroll;
+    height:85vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:14px;
+  }
+
+  .mobilenav.responsive a{
+    text-decoration:none;
+    display:block;
+    color:white;
+    padding: 14px 16px;
+  }
+  .mobilenav.responsive a:hover{
+    background-color: gold;
+    color: black;
+  }
+
+}
+
+
+
+/* ShortDevs mobile menu end */
+
+
+
+/* Panel Title And Clock start */
+
+.titlustanga{
+  text-align:left;
+  width:49%;
+  float:left;
+}
+
+.ceas{
+  text-align:right;
+  width:49%;
+  float:right;
+}
+
+@media screen and (max-width: 1160px) {
+
+ .paneltitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:18px;
+    color:black;
+    border-bottom:1px solid #CCC;
+    padding-bottom:5px;
+    text-align:center;
+  }
+
+
+  .paneltitle2{
+    margin-bottom:0px;
+  }
+
+
+
+  .ceas{
+    display:none;
+  }
+  .titlustanga{
+    text-align:center;
+    width:100%;
+    float:none;
+  }
+
+}
+
+
+/* Panel Title And Clock end */
+
+
+
+/* Sidebar start */
+
+.sidebar{
+  position:relative;
+  float:left;
+  width:19%;
+}
+
+.sidebar ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  border-top:1px solid #CCC;
+  border-bottom:0px solid #CCC;
+  border-left:1px solid #CCC;
+  border-right:1px solid #CCC;
+  margin-top:15px;
+}
+
+.sidebar ul li{
+  text-indent:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom:1px solid #ccc;
+}
+.sidebar ul li a{
+  text-decoration:none;
+  color:black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:13px;
+}
+.sidebar ul li a:hover {
+  color:gold;
+}
+
+@media screen and (max-width: 992px) {
+
+  .sidebar{
+    display:none;
+  }
+
+}
+
+/* Sidebar end */
+
+/* Forms titles start */
+
+h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size:16px;
+  padding:0;
+  margin:0;
+}
+
+/* Forms titles end */
+
+
+
+/* The Command Line start */
+
+
+.cmdform{
+  display:block;
+  overflow:hidden;
+  border:1px solid #ccc;
+  height:52px;
+  margin-top:15px;
+}
+
+
+.cmdform input[type="text"]{
+  width:87%;
+  display:block;
+  float:left;
+  vertical-align:top;
+  height:50px;
+  border:0;
+  text-indent: 15px;
+}
+.cmdform input[type="submit"]{
+  width:10%;
+  display:block;
+  float:right;
+  height:40px;
+  margin-top:5px;
+  margin-right:5px;
+  border:1px solid goldenrod;
+  background:gold;
+  color:black;
+  font-size:14px;
+  padding:5px;
+  text-transform:uppercase;
+  border-radius:4px;
+}
+
+ .cmdform input[type="submit"]:hover{
+   background:#FFDF00;
+   transition: 0.3s;
+   -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -o-transition:0.3s;
+   -webkit-box-shadow: 0 0 5px 2px #fff;
+   -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px #fff;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+.resultcmd{
+  padding-top:15px;
+  border:0px solid black;
+}
+
+
+.resultcmd ul {
+  list-style-type: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:12px;
+  padding:0;
+  margin:0;
+
+}
+
+.resultcmd ul li{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:14px;
+}
+
+.resultcmd h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:12px;
+  color:red;
+  padding:0;
+  margin:0;
+}
+
+
+@media screen and (max-width: 1160px) {
+
+  .cmdform{
+    display:block;
+    overflow:hidden;
+    border:1px solid #ccc;
+    height:52px;
+    width:96%;
+    margin-top:15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  
+  .cmdform input[type="text"]{
+    width:70%;
+    display:block;
+    float:left;
+    vertical-align:top;
+    height:50px;
+    border:0;
+    text-indent: 15px;
+  }
+  .cmdform input[type="submit"]{
+    width:25%;
+    display:block;
+    float:right;
+    vertical-align:top;
+    height:40px;
+    margin-top:5px;
+    margin-right:5px;
+  }
+
+  .resultcmd{
+    width:96%;
+    margin:auto;
+  }
+
+}
+
+/* The Command Line end */
+
+
+/* Footer start */
+
+.footer{
+  z-index:100;
+  font-family: 'Roboto Condensed', sans-serif; 
+  background:black;
+  font-size:12px;
+  color:white;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  position:fixed;
+  bottom:0;
+  text-align:center;
+}
+
+
+/* Footer end */
+
+
+/* Cpanel / Page / Edit Superpage start */
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+
+
+.container{
+  position:relative;
+  overflow: hidden;
+  width:98%;
+  z-index:1;
+  margin:auto;
+}
+
+
+.rowcontainer{
+  position:relative;
+  float:right;
+  width:80%;
+}
+
+
+
+.panelbin{
+  overflow:hidden;
+  padding-top:0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.panelgroup{
+  padding-top:15px;
+  width:50%;
+  display:inline-block;
+  text-align: center;
+}
+
+
+.panelbox{
+  text-align:left;
+  width: 49%;
+  border:1px solid #ccc;
+  display:inline-block;
+  padding:5px;
+  vertical-align:top;
+}
+
+.panelbox input[type="url"]{
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+}
+
+.panelbox input[type="password"]{
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+ }
+
+
+ .panelbox input[type="text"]{
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+ }
+
+ .panelbox input[type="email"]{
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+ }
+
+ .panelbox input[type="submit"]{
+  border:1px solid goldenrod;
+  background:gold;
+  color:black;
+  font-size:13px;
+  padding:5px;
+  width:60%;
+  text-transform:uppercase;
+  border-radius:10px;
+  cursor: pointer;
+ }
+
+ .panelbox input[type="submit"]:hover{
+   background:#FFDF00;
+   transition: 0.3s;
+   -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -o-transition:0.3s;
+   -webkit-box-shadow: 0 0 5px 2px #fff;
+   -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px #fff;
+ }
+
+ .pbtn{
+   overflow:hidden;
+   display:block;
+   text-align: center;
+ }
+ .pbtn img{
+   width:15px;
+   height:auto;
+ }
+ .pintit{
+  text-align:left;
+  display:inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size:20px;
+  padding:0;
+  margin:0;
+  width:70%;
+  vertical-align: top;
+ }
+
+ .pinbtns{
+   vertical-align: top;
+   display:inline-block;
+   width:25%;
+   overflow:hidden;
+ }
+ .pinbtns button{
+  border:1px solid goldenrod;
+  background:gold;
+  color:black;
+  font-size:13px;
+  padding:2px;
+  text-transform:uppercase;
+  border-radius:5px;
+  cursor:pointer;
+  float:right;
+ }
+
+ .pinbtns  button:hover{
+  background:#FFDF00;
+  transition: 0.3s;
+  -webkit-transition:0.3s;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-box-shadow: 0 0 5px 2px #fff;
+  -moz-box-shadow: 0 0 5px 2px #fff;
+   box-shadow: 0 0 5px 2px #fff;
+}
+
+
+
+select {
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background: url('selectarr.png') no-repeat right #f4f4f4;
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+
+
+}
+
+
+
+
+.panelbox ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:13px;
+}
+
+.panelbox ul li label{
+  font-size:12px;
+}
+
+.selectboxx{
+  background:white;
+  border-top:0px solid #000;
+  border-bottom:0px solid #000;
+  padding:10px 0px;
+}
+
+.selectboxx input[type="submit"]{
+  color:black;
+  background:#f4f4f4;
+  border:1px solid #CCC;
+  width:40%;
+}
+
+.selectboxx input[type="submit"]:hover{
+  background:#EEE;
+  transition: 0.3s;
+  -webkit-transition:0.3s;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-box-shadow: 0 0 5px 2px #fff;
+  -moz-box-shadow: 0 0 5px 2px #fff;
+   box-shadow: 0 0 5px 2px #fff;
+   cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1160px) {
+
+  .panelbin{
+    overflow:hidden;
+    padding-top:15px;
+    display: block;
+    text-align: center;
+  }
+
+  .panelgroup{
+    width:100%;
+    display:block;
+    text-align: center;
+    margin-bottom:15px;
+    padding-top:0px;
+  }
+  
+  
+  .panelbox{
+    overflow: hidden;
+    text-align:left;
+    width: 49%;
+    border:1px solid #ccc;
+    display:inline-block;
+    padding:5px;
+    vertical-align:top;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .panelgroup{
+    margin-bottom:0px;
+  }
+  
+
+  .panelbox{
+    overflow: hidden;
+    text-align:left;
+    width: 100%;
+    border:1px solid #ccc;
+    display:inline-block;
+    padding:5px;
+    vertical-align:top;
+    margin-bottom:15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .rowcontainer{
+    position:relative;
+    width:100%;
+    float:none;
+  }
+}
+
+
+
+
+/* Cpanel / Page / Edit Superpage end */
+
+
+
+/* Page only (.formright is for edit superpage also) style start */
+
+
+
+.catdata{
+  display:block;
+  float:left;
+  width:79%;
+  overflow:scroll;
+}
+
+
+.tablebin{
+  display: flex;
+  overflow:visible;
+  width:100%;
+  white-space: nowrap;
+  border-left:1px solid #ccc;
+}
+
+.catdata table{
+  width: 100%;
+  padding:0;
+  margin:0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align:center;
+}
+
+.catdata table th {
+  background:#f4f4f4;
+  border-right:1px solid #ccc;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  border-left:0px solid #ccc;
+  color:black;
+  padding:5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:13px;
+}
+
+.catdata table td {
+  border:1px solid #ccc;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:12px;
+  padding:5px;
+  vertical-align:top;
+}
+
+
+
+
+/* Vertical Table start */
+
+
+.ztb{
+  display:block;
+  float:left;
+  width:79%;
+  overflow:scroll;
+}
+
+.tbin{
+  display: flex;
+  overflow:visible;
+  width:100%;
+  white-space: nowrap;
+  border-left:1px solid #ccc;
+}
+
+.ztb table{
+  width: 100%;
+  padding:0;
+  margin:0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align:left;
+  display: table;
+}
+
+.ztb table tr {
+  display:table-cell;
+  vertical-align: top;
+  width:auto;
+}
+
+.ztb table th {
+  background:#f4f4f4;
+  border-right:1px solid #ccc;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  border-left:0px solid #ccc;
+  color:black;
+  padding:5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:12px;
+  display:block;
+}
+
+.ztb table td {
+  border:1px solid #ccc;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:12px;
+  padding:5px;
+  display:block;
+}
+
+
+
+/* Vertical Table End */
+
+
+.verticaltbbtn{
+  border:1px solid goldenrod;
+  background:gold;
+  color:black;
+  font-size:13px;
+  padding:5px;
+  width:60%;
+  text-transform:uppercase;
+  border-radius:10px;
+  cursor: pointer;
+ }
+
+ .verticaltbbtn:hover{
+  background:#FFDF00;
+  transition: 0.3s;
+  -webkit-transition:0.3s;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-box-shadow: 0 0 5px 2px #fff;
+  -moz-box-shadow: 0 0 5px 2px #fff;
+   box-shadow: 0 0 5px 2px #fff;
+}
+
+
+
+.catdata table td img {
+  max-width:100px;
+  height:auto;
+}
+
+
+.formright{
+  padding:5px;
+  float:right;
+  width:20%;
+  border:1px solid #ccc;
+}
+
+.formright input[type="text"]{
+  border:1px solid #ccc;
+  font-size:13px;
+  text-indent: 5px;
+  padding:5px;
+  width:100%;
+  border-radius:10px;
+  margin-top:5px;
+ }
+
+.formright ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.formright input[type="submit"]{
+  border:1px solid goldenrod;
+  background:gold;
+  color:black;
+  font-size:13px;
+  padding:5px;
+  width:60%;
+  text-transform:uppercase;
+  border-radius:10px;
+  cursor: pointer;
+ }
+
+ .formright input[type="submit"]:hover{
+   background:#FFDF00;
+   transition: 0.3s;
+   -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -o-transition:0.3s;
+   -webkit-box-shadow: 0 0 5px 2px #fff;
+   -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px #fff;
+ }
+
+
+
+@media screen and (max-width: 1160px) {
+  .catdata{
+    float:none;
+    width:96%;
+    margin:auto;
+  }
+  .formright{
+    text-align: left;
+    margin-top:15px;
+    padding:5px;
+    float:none;
+    width:96%;
+    border:1px solid #ccc;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+
+/* Page only (.formright is for edit superpage also) style end */
+
+
+
+/* Edit Superpage start */
+
+
+.superpageform{
+  text-align:center;
+}
+
+.superpageform input[type="text"]{
+  width:100%;
+  display:block;
+  margin:auto;
+  height:50px;
+  border:0;
+  text-indent: 15px;
+  border:1px solid black;
+}
+
+
+
+
+
+.catdata2{
+  display:block;
+  float:left;
+  width:79%;
+}
+
+.tablebin2{
+  overflow:visible;
+  width:100%;
+  border-left:1px solid #ccc;
+  border-top:1px solid #ccc;
+}
+
+
+
+.catdata2 table{
+  width: 100%;
+  padding:0;
+  margin:0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align:center;
+  border-bottom:1px solid #ccc;
+}
+
+
+
+
+.catdata2 table td {
+  border-bottom:1px solid #ccc;
+  border-right:1px solid #ccc;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:14px;
+  padding:5px;
+  vertical-align:top;
+}
+
+.catdata2 table td > table {
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+}
+
+
+@media screen and (max-width: 1160px) {
+  .catdata2{
+    float:none;
+    width:96%;
+    margin:auto;
+  }
+
+}
+
+/* Edit Superpage end */
+
+
+/* Login page start */
+
+.actinstall{
+  background:#f4f4f4;
+  border:1px solid #ccc;
+  padding:10px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+  width:36%;
+}
+
+.actinstall2{
+  background:#f4f4f4;
+  border:1px solid #ccc;
+  padding:10px;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+  width:36%;
+}
+
+.actinstall input[type="text"]{
+  width:100%;
+  text-indent: 10px;
+  padding:10px 0px;
+  margin-top:-1px;
+
+}
+
+.actinstall input[type="email"]{
+  width:100%;
+  text-indent: 10px;
+  padding:10px 0px;
+}
+
+.actinstall input[type="password"]{
+  width:100%;
+  text-indent: 10px;
+  padding:10px 0px;
+
+}
+@media screen and (max-width: 800px) {
+  .actinstall{
+    width:96%;
+  }
+
+  .actinstall2{
+    width:96%;
+  }
+}
+
+.actnote{
+  text-align:center;
+  padding-top:10px;
+}
+
+/* Login page end */
+
+
+
+/* A few shortcodes inside page style start */
+
+.delsinp{
+  overflow:hidden;
+}
+
+.subinp input[type="submit"]{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:10px;
+  display:block;
+  float:right;
+  background:red;
+  color:white;
+  border:0px;
+  padding:2px 5px;
+  margin:0;
+  outline:none;
+  cursor:pointer;
+}
+
+.delsinp input[type="submit"]{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:10px;
+  display:block;
+  float:right;
+  background:red;
+  color:white;
+  border:0px;
+  padding:2px 5px;
+  margin:0;
+  outline:none;
+  cursor:pointer;
+}
+
+.rssfeed {
+  padding:0;
+  margin:0;
+}
+
+.rssfeed a{
+  white-space: pre-line;
+  margin-bottom:5px;
+  padding:2px;
+  display:block;
+  border:1px solid black;
+  text-decoration:none;
+  color:black;
+}
+.rssfeed a:hover{
+  background:#F5F5F5;
+}
+
+.wrap {
+  white-space: pre-line;
+}
+
+
+/* A few shortcodes inside page style end */
+
+
+
