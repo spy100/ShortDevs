@@ -40,6 +40,41 @@ function CheckIfEmpty($s){if(empty($s)){ echo "<label>Must not be empty</label>"
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel='stylesheet'  href='style.css' type='text/css' media='all' />
+    <style>
+     #honey{display:none;}
+
+    input[type="submit"]{
+    width:10%;
+    display:block;
+    height:40px;
+    margin-top:5px;
+    margin-right:5px;
+    border:1px solid goldenrod;
+    background:gold;
+    color:black;
+    font-size:14px;
+    padding:5px;
+    text-transform:uppercase;
+    border-radius:4px;
+    }
+    
+   input[type="submit"]:hover{
+   background:#FFDF00;
+   transition: 0.3s;
+   -webkit-transition:0.3s;
+   -moz-transition:0.3s;
+   -o-transition:0.3s;
+   -webkit-box-shadow: 0 0 5px 2px #fff;
+   -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 2px #fff;
+    cursor: pointer;
+   }
+
+
+
+
+    
+    </style>
     <title>ShortDevs</title>
   </head>
 <body>
@@ -52,6 +87,7 @@ function CheckIfEmpty($s){if(empty($s)){ echo "<label>Must not be empty</label>"
 <div class="actinstall" >
 <h2>Login</h2><br>
 <form action="index.php" method="POST">
+<input id="honey" type="text" name="honey" value="" />
 <label>Username:</label><br>
 <input type="text" name="username" value="" />
 <br><br>
@@ -67,6 +103,10 @@ echo "<br><br>";
 
     $username = $_POST['username'];
     $passw = $_POST['password'];
+    $honey = $_POST['honey'];
+
+    if(!empty($honey)){exit;}
+
     CheckIfEmpty($username);
     CheckIfEmpty($passw);
 
