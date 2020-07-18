@@ -1,6 +1,6 @@
 # ShortDevs
 
-![alt text](logoblack.png)
+![alt text](logowhite.png)
 
 Video Demo: https://www.youtube.com/watch?v=GrgkIp0M_0Q
 
