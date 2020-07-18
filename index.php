@@ -46,11 +46,13 @@
       while ($row10 = mysqli_fetch_array($result10))
       {
          if(htmlentities($row10['publicorprivate'],ENT_QUOTES) == "private"){
-           exit;
+          echo "<script data-cfasync=\"false\"> window.location.replace(\"$baseurl/404.php\");</script>";
+          exit;
          }
       }
     }else{
-     exit;
+      echo "<script data-cfasync=\"false\"> window.location.replace(\"$baseurl/404.php\");</script>";
+      exit;
     }
    }else{
      echo "ERROR: Could not able to execute $sql10. " . mysqli_error($link);
