@@ -22,7 +22,19 @@ A shortcode can be anything that a programmer can imagine. ( A calculator, a sho
 
 Shortdevs is the universe of shortcodes and tables.
 
+
 Special Edit SuperPage Shortcode : [Page Name][{][(][Page Name][Page Name[)][(][Page Name][Page Name][)][}]
+It creates line 57 row
+[img]https://i.ibb.co/NrBnZw7/Screenshot-from-2020-07-19-12-45-08.png[/img]
+
+"(" = <table><tr>
+")" = </tr></table>
+"{" = <td>
+"}" = </td>
+
+
+Create your own cool rows ... 
+
 
 
 -------------------------------
