@@ -32,9 +32,13 @@ It creates line 57 row
 ![alt text](https://i.ibb.co/NrBnZw7/Screenshot-from-2020-07-19-12-45-08.png)
 
 "(" = "table tr"
+
 ")" = "/tr /table"
+
 "{" = "td"
+
 "}" = "/td"
+
 
 
 Create your own cool rows ... 
