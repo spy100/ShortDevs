@@ -22,6 +22,7 @@ A shortcode can be anything that a programmer can imagine. ( A calculator, a sho
 
 Shortdevs is the universe of shortcodes and tables.
 
+Special Edit SuperPage Shortcode : [Page Name][{][(][Page Name][Page Name[)][(][Page Name][Page Name][)][}]
 
 
 -------------------------------
