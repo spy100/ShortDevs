@@ -25,7 +25,7 @@ Shortdevs is the universe of shortcodes and tables.
 
 Special Edit SuperPage Shortcode :
 
-[Page Name][{][(][Page Name][Page Name[)][(][Page Name][Page Name][)][}]
+[Page Name][{][(][Page Name][Page Name][)][(][Page Name][Page Name][)][}]
 
 It creates line 57 row
 
