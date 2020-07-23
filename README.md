@@ -2,6 +2,8 @@
 
 ![alt text](logowhite.png)
 
+Telegram Channel: t.me/shortdevs
+
 Video Demo: https://www.youtube.com/watch?v=GrgkIp0M_0Q
 
 Shortdevs is a tool created with html / css / php / mysql / js and jquery.
