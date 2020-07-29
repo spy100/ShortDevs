@@ -192,7 +192,6 @@ $dbpassword = $_POST['dbpass'];
 $dbname = $_POST['db'];
 
 
-//$conn = new mysqli($dbservername, $dbusername, $dbpassword);
 $conn = mysqli_connect($dbservername, $dbusername, $dbpassword);
 
 
