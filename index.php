@@ -143,7 +143,7 @@ if($result3 = mysqli_query($link, $sql3)){
 
              //start get page
              $zzcat = $cval;
-             echo "<td class=\"aaa$ztd\" style=\"width:calc(100% / $tdc);\" ><table class=\"b$ztd\" >";
+             echo "<td class=\"aaa$ztd\" ><table class=\"b$ztd\" >";
              $sql66 = "SELECT * FROM CategoryInputs WHERE category ='$zzcat'";
              $arrinputs = array();
              if($result66 = mysqli_query($link, $sql66)){
