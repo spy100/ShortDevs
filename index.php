@@ -124,7 +124,7 @@ if($result3 = mysqli_query($link, $sql3)){
 
 
 
-      echo "<table class=\"\" id=\"bat".$ztabid."\" ><tr class=\"\" >";
+      echo "<table class=\"a$ztabid\" id=\"a".$ztabid."\" ><tr class=\"aa$ztabid\" >";
       $ztd = 0;
       //start foreach
       foreach($columns as $kc => $cval1){
@@ -132,18 +132,18 @@ if($result3 = mysqli_query($link, $sql3)){
           $ztd++;
           $cval = htmlentities($cval1,ENT_QUOTES);
           if($cval == "("){
-            echo "<table class=\"cat$ztd\" ><tr class=\"tr$ztd\" >";
+            echo "<table class=\"c$ztd\" ><tr class=\"cc$ztd\" >";
           }else if($cval == ")"){
             echo "</tr></table>";
           }else if($cval == "{"){
-            echo "<td class=\"td$ztd\" >";
+            echo "<td class=\"ccc$ztd\" >";
           }else if($cval == "}"){
             echo "</td>";
           }else{
 
              //start get page
              $zzcat = $cval;
-             echo "<td style=\"width:calc(100% / $tdc);\" ><table class=\"dat$ztd\" >";
+             echo "<td class=\"aaa$ztd\" style=\"width:calc(100% / $tdc);\" ><table class=\"b$ztd\" >";
              $sql66 = "SELECT * FROM CategoryInputs WHERE category ='$zzcat'";
              $arrinputs = array();
              if($result66 = mysqli_query($link, $sql66)){
@@ -167,7 +167,7 @@ if($result3 = mysqli_query($link, $sql3)){
                  while ($row = mysqli_fetch_array($result))
                  {
                   $t = $r++;
-                   echo "<tr class=\"trtwo$t\" >";
+                   echo "<tr class=\"bb$t\" >";
                    $hhid = $row['id'];
                    
                    
