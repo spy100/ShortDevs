@@ -60,25 +60,20 @@
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel='stylesheet'  href='superpagestyle.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="superpagestyle.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
-
-
     <title>Your Title</title>
   </head>
   <body>
  
 
 <div class="container-fluid" >
-<div class="row dark" >
-<table class="table table-nonfluid table-dark" id="mastertable" cellpadding="0" cellspacing="0" ><tr><td>
 
 <?php
 include 'functions.php';
@@ -213,10 +208,7 @@ if($result3 = mysqli_query($link, $sql3)){
 ?>
 
 
-</td></tr></table>
 
-
-</div>
 </div><!--END CONTAINER -->
 
 <script>
